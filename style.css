@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, #FA8BFF, #2BD2FF, #2BFF88) no-repeat;
+    width: 100vw;
+    background-size: fit-content;
+
+}
+.row{
+    margin: 0;
+}
+
+header{
+    font-size:20px;
+    font-weight:500;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+}
+
+
+header img{
+    position: absolute ;
+    top: -6px;
+    left: 220px;
+    height: 60px;   
+}
+
+.left_sec{
+    margin-top:50px;
+    height: 100px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cus_text{
+    margin-top:10px;
+    font-size:14px;
+}
+
+
+.left_sec button{
+    font-size:14px;
+    background: linear-gradient(to right,#0093E9,#80D0C7);
+    height: 80px;
+    width: 200px;
+    border-radius: 20px;
+    outline: none;   
+    border: 2px solid linear-gradient(to right,#FFE53B,#FF2525);
+}
+.left_sec p{
+    font-size:12px;
+}
+
+
+.right_sec{
+    margin-top: 30px;;    
+    height: 50px;
+    float: right;
+    font-weight: 600;
+}
+
+.right_sec h2{
+    font-size: 32px;
+    font-weight:700;    
+}
+
+.calcPart{
+    margin-left: 700px;
+}
+
+#subTot{
+    height: 30px;
+    width: 150px;
+    background: #dedfef;
+    margin-left: 45px;
+}
+
+
+#Tot{
+    height: 30px;
+    width: 150px;
+    background: #dedfef;
+    margin-left: 75px;
+}
+
+
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tax Invoice</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+</head>
+
+<body>
+    
+    
+    <div class="container bg-light">   
+        
+        <!-- header -->
+        <header class="text-center bg-light">
+            <img src="header.png" > <span class="text-capitalize m-auto text-dark"> Invoice Me</sspan>
+        </header>
+            
+            
+            <!-- Section 1 -->
+            <div class="row container d-flex justify-content-between">
+                
+                <section class="col-md-5 col-3 left_sec">
+                    <input type="file" id="main_btn" accept=".jpg,.png,.jpeg,.svg" hidden="true">
+                    
+                    <button id="cus_btn"><img id="btn_img" src="attachment.svg">Upload Comapny Logo</button>
+                    <p id="cus_text" class="text-center">
+                        No Image Choosen
+                    </p>
+                    
+                </section>
+                <section class="col-md-5 col-4 ml-auto right_sec d-flex-column justify-content-center align-items-center" >
+                    <h2 class="display-2 text-uppercase">Tax invoice</h2>
+                    <br>
+                    Invoice Number:
+                    <input type="text" required class="form-control">
+                </section>
+            </div>
+            <br><br><br>
+            
+            <!-- Section 2 -->
+            
+            <div class="container mb-5">
+                <form class="form col-md-6">
+                    From:<br><br>
+                    <div class="form-group d-flex">  
+                        <label>Address Line 1:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group d-flex">
+                        <label>Address Line 2:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group d-flex">
+                        <label class="mr-5">State:</label>
+                        <select class="form-control">
+                            <option>Select A State</option>
+                            <option>New Delhi</option>
+                            <option>Maharashtra</option>
+                            <option>West Bengal</option>
+                            <option>Tamil Nadu</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Karnataka</option>
+                            <option>Assam</option>
+                        </select>
+                    </div>
+                    <br>
+                    
+                    <hr>
+                    To:<br><br>
+                    <div class="form-group d-flex">  
+                        <label>Address Line 1:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group d-flex">
+                        <label>Address Line 2:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group d-flex">
+                        <label class="mr-5">State:</label>
+                        <select class="form-control">
+                            <option>Select A State</option>
+                            <option>New Delhi</option>
+                            <option>Maharashtra</option>
+                            <option>West Bengal</option>
+                            <option>Tamil Nadu</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Karnataka</option>
+                            <option>Assam</option>
+                        </select>
+                    </div>
+                    
+                </form>
+            </div>
+            <br><br>
+            
+            
+            <!-- Section 3 -->
+            <div class="container">
+                
+                <table class="table table-striped table-hover table-bordered">
+                    <thead class="text-center bg-dark text-light" >
+                        <tr>
+                            <td>Invoice Date</td>
+                            <td>Due Date</td>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr>
+                            <td >
+                                <div class="input-group d-flex justify-content-center" >
+                                   
+                                        <input type="date" class="form-control">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group d-flex justify-content-center" >
+                                        <input type="date" class="form-control">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <br><br><br>
+            
+            <!-- Addding Items in the Table -->
+
+            <div class="container">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead class="text-center bg-dark text-light" >
+                        <tr class="text-uppercase font-weight-bold">
+                            <td>Sl. No.</td>
+                            <td>Item Name</td>
+                            <td>Quantity</td>
+                            <td>Rate</td>
+                            <td>Amount</td>
+                        </tr>
+                    </thead>
+                    <tbody name="rows" class="text-center" id="tabBody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="container mt-5 p-5 d-flex justify-content-between">
+                <button class="btn btn-outline-dark" type="button" id="addBtn">Add Item</button>
+                <button class="btn btn-outline-dark" type="button" id="getTot">Get Total</button>
+            </div>
+            <br><br><br>
+            <hr>
+            <div class="container d-flex-column calcPart">
+                <div class="d-flex mb-5">
+                    <label>Sub Total:</label> <input type="text" readonly id="subTot" class="text-center">
+                </div>
+                <div class="tax mb-5">
+                    <label >Tax(in %):</label><input type="text" id="tax" class="ml-5 ">
+                </div>
+                <div class="d-flex mb-5">
+                   <label> Total: </label><input type="text" readonly id="Tot" class="text-center">
+                </div>
+            </div>
+            <br><br><br>
+            <hr>
+            <div class="container text-center">
+                <h6>Total in Words: <span class="text-capitalize ml-3" id="inWords"></span> </h6>
+            </div>
+            <br><br><br><br>
+     </div>
+        
+        
+        
+        
+        
+    </body>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="numberToWords.js"></script>
+  
+</html>
